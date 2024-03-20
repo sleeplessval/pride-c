@@ -23,6 +23,11 @@
 
 #define STRIPE		"██████████████████\n"
 
+#define RAINBOW		"rainbow"
+#define LESBIAN		"lesbian"
+#define NONBINARY	"nonbinary"
+#define TRANSGENDER	"transgender"
+
 void rainbow() {
 	
 }
@@ -30,9 +35,9 @@ void rainbow() {
 int main(int argc, char **argv) {
 	char *flag;
 	if(argc > 1) { flag = argv[1]; }
-	else { flag = "rainbow"; }
+	else { flag = RAINBOW; }
 
-	if(strcmp(flag, "rainbow") == 0) {
+	if(strcmp(flag, RAINBOW) == 0) {
 		printf(RED STRIPE);
 		printf(L_RED STRIPE);
 		printf(YELLOW STRIPE);
@@ -41,7 +46,7 @@ int main(int argc, char **argv) {
 		printf(MAGENTA STRIPE);
 	}
 
-	else if(strcmp(flag, "lesbian") == 0) {
+	else if(strcmp(flag, LESBIAN) == 0) {
 		printf(RED STRIPE);
 		printf(L_RED STRIPE);
 		printf(WHITE STRIPE);
@@ -49,14 +54,14 @@ int main(int argc, char **argv) {
 		printf(MAGENTA STRIPE);
 	}
 
-	else if(strcmp(flag, "nb") == 0) {
+	else if(strcmp(flag, NONBINARY) == 0) {
 		printf(L_YELLOW STRIPE);
 		printf(WHITE STRIPE);
 		printf(L_BLUE STRIPE);
 		printf(BLACK STRIPE);
 	}
 
-	else if(strcmp(flag, "trans") == 0) {
+	else if(strcmp(flag, TRANSGENDER) == 0) {
 		printf(L_CYAN STRIPE);
 		printf(PINK STRIPE);
 		printf(WHITE STRIPE);
