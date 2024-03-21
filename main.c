@@ -3,70 +3,79 @@
 
 #define RESET		"\x1b[0m"
 
-#define BLACK		"\x1b[30m"
-#define RED			"\x1b[31m"
-#define GREEN		"\x1b[32m"
-#define YELLOW		"\x1b[33m"
-#define BLUE		"\x1b[34m"
-#define MAGENTA		"\x1b[35m"
-#define CYAN		"\x1b[36m"
-#define GRAY		"\x1b[37m"
-
-#define GREY		"\x1b[90m"
-#define L_RED		"\x1b[91m"
-#define LIME		"\x1b[92m"
-#define L_YELLOW	"\x1b[93m"
-#define L_BLUE		"\x1b[94m"
-#define PINK		"\x1b[95m"
-#define L_CYAN		"\x1b[96m"
-#define WHITE		"\x1b[97m"
+#define COLOR(n)	"\x1b[38;5;" #n "m"
+#define BLACK		"\x1b[38;5;0m"
+#define WHITE		"\x1b[38;5;255m"
 
 #define STRIPE		"██████████████████\n"
 
 #define RAINBOW		"rainbow"
+#define AROACE		"aroace"
+#define BISEXUAL	"bisexual"
 #define LESBIAN		"lesbian"
 #define NONBINARY	"nonbinary"
+#define PANSEXUAL	"pansexual"
 #define TRANSGENDER	"transgender"
 
-void rainbow() {
-	
-}
-
 int main(int argc, char **argv) {
+	//	get argv[1] or fall back to RAINBOW
 	char *flag;
 	if(argc > 1) { flag = argv[1]; }
 	else { flag = RAINBOW; }
 
+
 	if(strcmp(flag, RAINBOW) == 0) {
-		printf(RED STRIPE);
-		printf(L_RED STRIPE);
-		printf(YELLOW STRIPE);
-		printf(GREEN STRIPE);
-		printf(BLUE STRIPE);
-		printf(MAGENTA STRIPE);
+		printf(COLOR(196) STRIPE);			//	red
+		printf(COLOR(208) STRIPE);			//	orange
+		printf(COLOR(220) STRIPE);			//	yellow
+		printf(COLOR(28) STRIPE);			//	green
+		printf(COLOR(21) STRIPE);			//	blue
+		printf(COLOR(90) STRIPE);			//	purple
+	}
+
+	else if(strcmp(flag, AROACE) == 0) {
+		printf(COLOR(172) STRIPE);			//	orange
+		printf(COLOR(184) STRIPE);			//	yellow
+		printf(WHITE STRIPE);				//	white
+		printf(COLOR(38) STRIPE);			//	blue
+		printf(COLOR(17) STRIPE);			//	navy
+	}
+
+	else if(strcmp(flag, BISEXUAL) == 0) {
+		printf(COLOR(161) STRIPE STRIPE);	//	maroon
+		printf(COLOR(91) STRIPE);			//	purple
+		printf(COLOR(21) STRIPE STRIPE);	//	blue
 	}
 
 	else if(strcmp(flag, LESBIAN) == 0) {
-		printf(RED STRIPE);
-		printf(L_RED STRIPE);
-		printf(WHITE STRIPE);
-		printf(PINK STRIPE);
-		printf(MAGENTA STRIPE);
+		printf(COLOR(202) STRIPE);			//	orange
+		printf(COLOR(209) STRIPE);			//	tangerine
+		printf(WHITE STRIPE);				//	white
+		printf(COLOR(205) STRIPE);			//	pink
+		printf(COLOR(161) STRIPE);			//	magenta
 	}
 
 	else if(strcmp(flag, NONBINARY) == 0) {
-		printf(L_YELLOW STRIPE);
-		printf(WHITE STRIPE);
-		printf(L_BLUE STRIPE);
-		printf(BLACK STRIPE);
+		printf(COLOR(226) STRIPE);			//	yellow
+		printf(WHITE STRIPE);				//	white
+		printf(COLOR(134) STRIPE);			//	purple
+		printf(BLACK STRIPE);				//	black
+	}
+
+	else if(strcmp(flag, PANSEXUAL) == 0) {
+		printf(COLOR(161) STRIPE STRIPE);	//	magenta
+		printf(COLOR(220) STRIPE STRIPE);	//	yellow
+		printf(COLOR(45) STRIPE STRIPE);	//	cyan
 	}
 
 	else if(strcmp(flag, TRANSGENDER) == 0) {
-		printf(L_CYAN STRIPE);
-		printf(PINK STRIPE);
+		char *blue = COLOR(45) STRIPE;
+		char *pink = COLOR(177) STRIPE;
+		printf(blue);
+		printf(pink);
 		printf(WHITE STRIPE);
-		printf(PINK STRIPE);
-		printf(L_CYAN STRIPE);
+		printf(pink);
+		printf(blue);
 	}
 
 	printf(RESET);
