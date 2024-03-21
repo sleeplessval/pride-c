@@ -7,8 +7,22 @@
 #define RESET		"\x1b[0m"
 
 #define COLOR(n)	"\x1b[38;5;" #n "m"
-#define BLACK		"\x1b[38;5;0m"
-#define WHITE		"\x1b[38;5;255m"
+#define BLACK		COLOR(0)
+#define RED			COLOR(1)
+#define GREEN		COLOR(2)
+#define YELLOW		COLOR(3)
+#define BLUE		COLOR(4)
+#define MAGENTA		COLOR(5)
+#define CYAN		COLOR(6)
+#define GRAY		COLOR(7)
+#define L_BLACK		COLOR(8)
+#define L_RED		COLOR(9)
+#define L_GREEN		COLOR(10)
+#define L_YELLOW	COLOR(11)
+#define L_BLUE		COLOR(12)
+#define L_MAGENTA	COLOR(13)
+#define L_CYAN		COLOR(14)
+#define WHITE		COLOR(15)
 
 #define STRIPE		"██████████████████\n"
 
@@ -59,57 +73,55 @@ int main(int argc, char **argv) {
 	}
 
 	if(strcmp(flag, RAINBOW) == 0) {			//	- RAINBOW -
-		printf(COLOR(196) STRIPE);				//	red
-		printf(COLOR(208) STRIPE);				//	orange
-		printf(COLOR(220) STRIPE);				//	yellow
-		printf(COLOR(28) STRIPE);				//	green
-		printf(COLOR(21) STRIPE);				//	blue
-		printf(COLOR(90) STRIPE);				//	purple
+		printf(RED STRIPE);
+		printf(L_RED STRIPE);
+		printf(L_YELLOW STRIPE);
+		printf(GREEN STRIPE);
+		printf(BLUE STRIPE);
+		printf(MAGENTA STRIPE);
 	}
 
 	else if(strcmp(flag, AROACE) == 0) {		//	- ARO/ACE -
-		printf(COLOR(172) STRIPE);				//	orange
-		printf(COLOR(184) STRIPE);				//	yellow
-		printf(WHITE STRIPE);					//	white
-		printf(COLOR(38) STRIPE);				//	blue
-		printf(COLOR(17) STRIPE);				//	navy
+		printf(YELLOW STRIPE);
+		printf(L_YELLOW STRIPE);
+		printf(WHITE STRIPE);
+		printf(L_CYAN STRIPE);
+		printf(BLUE STRIPE);
 	}
 
 	else if(strcmp(flag, BISEXUAL) == 0) {		//	- BISEXUAL -
-		printf(COLOR(161) STRIPE STRIPE);		//	maroon
-		printf(COLOR(91) STRIPE);				//	purple
-		printf(COLOR(21) STRIPE STRIPE);		//	blue
+		printf(RED STRIPE STRIPE);
+		printf(MAGENTA STRIPE);
+		printf(BLUE STRIPE STRIPE);
 	}
 
 	else if(strcmp(flag, LESBIAN) == 0) {		//	- LESBIAN -
-		printf(COLOR(202) STRIPE);				//	orange
-		printf(COLOR(209) STRIPE);				//	tangerine
+		printf(RED STRIPE);				//	orange
+		printf(L_RED STRIPE);				//	tangerine
 		printf(WHITE STRIPE);					//	white
-		printf(COLOR(205) STRIPE);				//	pink
-		printf(COLOR(161) STRIPE);				//	magenta
+		printf(L_MAGENTA STRIPE);				//	pink
+		printf(MAGENTA STRIPE);				//	magenta
 	}
 
 	else if(strcmp(flag, NONBINARY) == 0) {		//	- NONBINARY -
-		printf(COLOR(226) STRIPE);				//	yellow
+		printf(L_YELLOW STRIPE);				//	yellow
 		printf(WHITE STRIPE);					//	white
-		printf(COLOR(134) STRIPE);				//	purple
+		printf(MAGENTA STRIPE);				//	purple
 		printf(BLACK STRIPE);					//	black
 	}
 
 	else if(strcmp(flag, PANSEXUAL) == 0) {		//	- PANSEXUAL -
-		printf(COLOR(161) STRIPE STRIPE);		//	magenta
-		printf(COLOR(220) STRIPE STRIPE);		//	yellow
-		printf(COLOR(45) STRIPE STRIPE);		//	cyan
+		printf(MAGENTA STRIPE STRIPE);
+		printf(L_YELLOW STRIPE STRIPE);
+		printf(CYAN STRIPE STRIPE);
 	}
 
 	else if(strcmp(flag, TRANSGENDER) == 0) {	//	- TRANSGENDER -
-		char *blue = COLOR(45) STRIPE;
-		char *pink = COLOR(177) STRIPE;
-		printf(blue);
-		printf(pink);
+		printf(L_CYAN STRIPE);
+		printf(L_MAGENTA STRIPE);
 		printf(WHITE STRIPE);
-		printf(pink);
-		printf(blue);
+		printf(L_MAGENTA STRIPE);
+		printf(L_CYAN STRIPE);
 	}
 
 
