@@ -33,6 +33,18 @@ void bisexual_256() {
 	);
 }
 
+void gay_256() {
+	printf(
+		COLOR(29) STRIPE
+		COLOR(49) STRIPE
+		COLOR(123) STRIPE
+		COLOR(255) STRIPE
+		COLOR(75) STRIPE
+		COLOR(63) STRIPE
+		COLOR(56) STRIPE
+	);
+}
+
 void lesbian_256() {
 	printf(
 		COLOR(202) STRIPE

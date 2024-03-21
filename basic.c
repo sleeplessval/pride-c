@@ -31,6 +31,16 @@ void bisexual_8() {
 	);
 }
 
+void gay_8() {
+	printf(
+		CYAN STRIPE
+		L_CYAN STRIPE
+		WHITE STRIPE
+		L_BLUE STRIPE
+		BLUE STRIPE
+	);
+}
+
 void lesbian_8() {
 	printf(
 		RED STRIPE

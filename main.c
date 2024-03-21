@@ -13,6 +13,7 @@
 #define RAINBOW		"rainbow"
 #define AROACE		"aroace"
 #define BISEXUAL	"bisexual"
+#define GAY			"gay"
 #define LESBIAN		"lesbian"
 #define NONBINARY	"nonbinary"
 #define PANSEXUAL	"pansexual"
@@ -33,6 +34,7 @@ void help() {
 		"flag names:\n"
 		INDENT AROACE "\n"
 		INDENT BISEXUAL "\n"
+		INDENT GAY "\n"
 		INDENT LESBIAN "\n"
 		INDENT NONBINARY "\n"
 		INDENT PANSEXUAL "\n"
@@ -74,9 +76,16 @@ int main(int argc, char **argv) {
 
 	else if(strcmp(flag, BISEXUAL) == 0) {		//	- BISEXUAL -
 		if(color_mode)
-			aroace_256();
+			bisexual_256();
 		else
 			bisexual_8();
+	}
+
+	else if(strcmp(flag, GAY) == 0) {			//	- GAY -
+		if(color_mode)
+			gay_256();
+		else
+			gay_8();
 	}
 
 	else if(strcmp(flag, LESBIAN) == 0) {		//	- LESBIAN -

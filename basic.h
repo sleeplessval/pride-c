@@ -22,6 +22,7 @@
 void rainbow_8();
 void aroace_8();
 void bisexual_8();
+void gay_8();
 void lesbian_8();
 void nonbinary_8();
 void pansexual_8();
