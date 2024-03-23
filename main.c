@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
-#include "color.h"
+#include "draw.h"
 #include "basic.h"
 #include "full.h"
 
@@ -58,8 +59,12 @@ int main(int argc, char **argv) {
 		help();
 		return 0;
 	}
-	
+
 	int color_mode = 0;
+	char * term = getenv("TERM");
+	if(strcmp(term, "linux"))
+		color_mode = 1;
+
 	unsigned long flag_hash = djb_hash(flag);
 
 	char *output;
@@ -122,7 +127,7 @@ int main(int argc, char **argv) {
 		case 249901996007388822lu:		//	'pansexual'
 		case 193502276lu:				//	'pan'
 			if(color_mode)	pansexual_256();
-			else			nonbinary_8();
+			else			pansexual_8();
 			break;
 
 		//	- TRANSGENDER -
