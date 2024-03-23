@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "color.h"
+#include "draw.h"
 #include "basic.h"
 #include "full.h"
 

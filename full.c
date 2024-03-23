@@ -2,83 +2,93 @@
 
 #include <stdio.h>
 
-#include "color.h"
+#include "draw.h"
 
 void rainbow_256() {
-	printf(
-		COLOR(196) STRIPE		//	red
-		COLOR(208) STRIPE		//	orange
-		COLOR(220) STRIPE		//	yellow
-		COLOR(28) STRIPE		//	green
-		COLOR(21) STRIPE		//	blue
-		COLOR(90) STRIPE		//	purple
-	);
+	color colors [] = {
+		196,		//	red
+		208,		//	orange
+		220,		//	yellow
+		28,			//	green
+		21,			//	blue
+		90			//	purple
+	};
+	draw(6, colors);
 }
 
 void aroace_256() {
-	printf(
-		COLOR(172) STRIPE
-		COLOR(184) STRIPE
-		COLOR(255) STRIPE
-		COLOR(38) STRIPE
-		COLOR(17) STRIPE
-	);
+	color colors [] = {
+		172,		//	orange
+		184,		//	yellow
+		255,		//	white
+		38,			//	blue
+		17			//	navy
+	};
+	draw(5, colors);
 }
 
 void bisexual_256() {
-	printf(
-		COLOR(161) STRIPE STRIPE
-		COLOR(91) STRIPE
-		COLOR(21) STRIPE STRIPE
-	);
+	color colors [] = {
+		161,		//	magenta
+		161,
+		91,			//	purple
+		21,
+		21			//	blue
+	};
+	draw(5, colors);
 }
 
 void gay_256() {
-	printf(
-		COLOR(29) STRIPE
-		COLOR(49) STRIPE
-		COLOR(123) STRIPE
-		COLOR(255) STRIPE
-		COLOR(75) STRIPE
-		COLOR(63) STRIPE
-		COLOR(56) STRIPE
-	);
+	color colors [] = {
+		29,
+		49,			//	greens
+		123,
+		255,		//	white
+		75,
+		63,			//	blues
+		56
+	};
+	draw(7, colors);
 }
 
 void lesbian_256() {
-	printf(
-		COLOR(202) STRIPE
-		COLOR(209) STRIPE
-		COLOR(255) STRIPE
-		COLOR(134) STRIPE
-		COLOR(161) STRIPE
-	);
+	color colors [] = {
+		202,		//	orange
+		209,		//	tangerine
+		255,		//	white
+		134,		//	pink
+		161			//	magenta
+	};
+	draw(5, colors);
 }
 
 void nonbinary_256() {
-	printf(
-		COLOR(226) STRIPE
-		COLOR(255) STRIPE
-		COLOR(134) STRIPE
-		COLOR(16) STRIPE
-	);
+	color colors [] = {
+		226,		//	yellow
+		255,		//	white
+		134,		//	purple
+		16			//	black
+	};
+	draw(4, colors);
 }
 
 void pansexual_256() {
-	printf(
-		COLOR(161) STRIPE STRIPE
-		COLOR(220) STRIPE STRIPE
-		COLOR(45) STRIPE STRIPE
-	);
+	color colors [] = {
+		161, 161,	//	magenta
+		220, 220,	//	yellow
+		45, 45		//	cyan
+	};
+	draw(6, colors);
 }
 
 void transgender_256() {
-	printf(
-		COLOR(45) STRIPE
-		COLOR(117) STRIPE
-		COLOR(255) STRIPE
-		COLOR(117) STRIPE
-		COLOR(45) STRIPE
-	);
+	color colors [] = {
+		45,			//	blue
+		117,		//	pink
+		255,		//	white
+		117,		//	pink
+		45			//	blue
+	};
+	draw(5, colors);
 }
 
