@@ -23,6 +23,16 @@ void aroace_8() {
 	);
 }
 
+void bigender_8() {
+	printf(
+		L_RED STRIPE
+		L_YELLOW STRIPE
+		WHITE STRIPE
+		MAGENTA STRIPE
+		L_BLUE STRIPE
+	);
+}
+
 void bisexual_8() {
 	printf(
 		RED STRIPE STRIPE
@@ -37,6 +47,16 @@ void gay_8() {
 		L_CYAN STRIPE
 		WHITE STRIPE
 		L_BLUE STRIPE
+		BLUE STRIPE
+	);
+}
+
+void genderfluid_8() {
+	printf(
+		L_RED STRIPE
+		WHITE STRIPE
+		MAGENTA STRIPE
+		BLACK STRIPE
 		BLUE STRIPE
 	);
 }

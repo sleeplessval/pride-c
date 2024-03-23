@@ -23,6 +23,7 @@ void help() {
 
 		"flag names:\n"
 		"   aroace\n"
+		"   bigender\n"
 		"   bisexual\n"
 		"   gay\n"
 		"   lesbian\n"
@@ -49,8 +50,6 @@ int main(int argc, char **argv) {
 	if(argc > 1) { flag = argv[1]; }
 	else { flag = ""; }
 
-	int color_mode = 0;
-
 	//	handle flags
 	if(strcmp(flag, "--version") == 0) {
 		version();
@@ -59,7 +58,8 @@ int main(int argc, char **argv) {
 		help();
 		return 0;
 	}
-
+	
+	int color_mode = 0;
 	unsigned long flag_hash = djb_hash(flag);
 
 	char *output;
@@ -78,6 +78,12 @@ int main(int argc, char **argv) {
 			else			aroace_8();
 			break;
 
+		//	- BIGENDER -
+		case 7572201141092229lu:		//	'bigender'
+			if(color_mode)	bigender_256();
+			else			bigender_8();
+			break;
+
 		//	- BISEXUAL -
 		case 7572201611094690lu:		//	'bisexual'
 		case 5863248lu:					//	'bi'
@@ -90,6 +96,12 @@ int main(int argc, char **argv) {
 		case 193499371lu:				//	'mlm'
 			if(color_mode)	gay_256();
 			else			gay_8();
+			break;
+
+		//	- GENDERFLUID -
+		case 13875257415654095150lu:	//	'genderfluid'
+			if(color_mode)	genderfluid_256();
+			else			genderfluid_8();
 			break;
 
 		//	- LESBIAN -

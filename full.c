@@ -25,6 +25,16 @@ void aroace_256() {
 	);
 }
 
+void bigender_256() {
+	printf(
+		COLOR(204) STRIPE
+		COLOR(227) STRIPE
+		COLOR(255) STRIPE
+		COLOR(134) STRIPE
+		COLOR(69) STRIPE
+	);
+}
+
 void bisexual_256() {
 	printf(
 		COLOR(161) STRIPE STRIPE
@@ -42,6 +52,16 @@ void gay_256() {
 		COLOR(75) STRIPE
 		COLOR(63) STRIPE
 		COLOR(56) STRIPE
+	);
+}
+
+void genderfluid_256() {
+	printf(
+		COLOR(204) STRIPE
+		COLOR(255) STRIPE
+		COLOR(164) STRIPE
+		COLOR(16) STRIPE
+		COLOR(63) STRIPE
 	);
 }
 
