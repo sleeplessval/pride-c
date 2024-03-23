@@ -114,7 +114,7 @@ int main(int argc, char **argv) {
 		case 249901996007388822lu:		//	'pansexual'
 		case 193502276lu:				//	'pan'
 			if(color_mode)	pansexual_256();
-			else			nonbinary_8();
+			else			pansexual_8();
 			break;
 
 		//	- TRANSGENDER -
