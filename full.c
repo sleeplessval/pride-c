@@ -28,13 +28,14 @@ void aroace_256() {
 }
 
 void bigender_256() {
-	printf(
-		COLOR(204) STRIPE
-		COLOR(227) STRIPE
-		COLOR(255) STRIPE
-		COLOR(134) STRIPE
-		COLOR(69) STRIPE
-	);
+	color colors [] = {
+		204,		//	pink
+		227,		//	yellow
+		255,		//	white
+		134,		//	purple
+		69			//	blue
+	};
+	draw(5, colors);
 }
 
 void bisexual_256() {
@@ -62,13 +63,14 @@ void gay_256() {
 }
 
 void genderfluid_256() {
-	printf(
-		COLOR(204) STRIPE
-		COLOR(255) STRIPE
-		COLOR(164) STRIPE
-		COLOR(16) STRIPE
-		COLOR(63) STRIPE
-	);
+	color colors[] = {
+		204,		//	pink
+		255,		//	white
+		164,		//	purple
+		16,			//	black
+		63,			//	blue
+	};
+	draw(5, colors);
 }
 
 void lesbian_256() {
