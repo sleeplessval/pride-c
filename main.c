@@ -6,18 +6,8 @@
 #include "full.h"
 
 #define VERSION		"0.0.1"
-#define INDENT		"   "
 
 #define RESET		"\x1b[0m"
-
-#define RAINBOW		"rainbow"
-#define AROACE		"aroace"
-#define BISEXUAL	"bisexual"
-#define GAY			"gay"
-#define LESBIAN		"lesbian"
-#define NONBINARY	"nonbinary"
-#define PANSEXUAL	"pansexual"
-#define TRANSGENDER	"transgender"
 
 void version() {
 	printf("pride-c v" VERSION "\n");
