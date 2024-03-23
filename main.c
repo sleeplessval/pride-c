@@ -5,6 +5,7 @@
 #include "draw.h"
 #include "basic.h"
 #include "full.h"
+#include "name.h"
 
 #define VERSION		"0.0.1"
 
@@ -70,86 +71,91 @@ int main(int argc, char **argv) {
 
 	unsigned long flag_hash = djb_hash(flag);
 
+	#ifdef DEBUG_HASH
+		printf("[ %lu ]\n\n", flag_hash);
+		return 0;
+	#endif
+
 	char *output;
 	switch(flag_hash) {
 		//	- RAINBOW -
-		case 229480993726103lu:			//	'rainbow'
-		case 5381lu:					//	(empty)
+		case RAINBOW:
+		case EMPTY:
 			if(color_mode)	rainbow_256();
 			else			rainbow_8();
 			break;
 
 		//	- AROMANTIC -
-		case 249881625443197539lu:		//	'aromantic'
-		case 193486503lu:				//	'aro'
+		case AROMANTIC:
+		case ARO:
 			if(color_mode)	aromantic_256();
 			else			aromantic_8();
 			break;
 
 		//	- ARO/ACE -
-		case 6953324567312lu:			//	'aroace'
-		case 22945708850429lu:			//	'aro-ace'
+		case AROACE:
+		case ARO_ACE:
 			if(color_mode)	aroace_256();
 			else			aroace_8();
 			break;
 
 		//	- ASEXUAL -
-		case 229459738843608lu:			//	'asexual'
-		case 193485998lu:				//	'ace'
+		case ASEXUAL:
+		case ACE:
 			if(color_mode)	asexual_256();
 			else			asexual_8();
 			break;
 
 		//	- BIGENDER -
-		case 7572201141092229lu:		//	'bigender'
+		case BIGENDER:
 			if(color_mode)	bigender_256();
 			else			bigender_8();
 			break;
 
 		//	- BISEXUAL -
-		case 7572201611094690lu:		//	'bisexual'
-		case 5863248lu:					//	'bi'
+		case BISEXUAL:
+		case BI:					//	'bi'
 			if(color_mode)	bisexual_256();
 			else			bisexual_8();
 			break;
 
 		//	- GAY -
-		case 193492486lu:				//	'gay'
-		case 193499371lu:				//	'mlm'
+		case GAY:
+		case MLM:
 			if(color_mode)	gay_256();
 			else			gay_8();
 			break;
 
 		//	- GENDERFLUID -
-		case 13875257415654095150lu:	//	'genderfluid'
+		case GENDERFLUID:
 			if(color_mode)	genderfluid_256();
 			else			genderfluid_8();
 			break;
 
 		//	- LESBIAN -
-		case 229473412894979lu:			//	'lesbian'
-		case 193510271lu:				//	'wlw'
+		case LESBIAN:
+		case WLW:
 			if(color_mode)	lesbian_256();
 			else			lesbian_8();
 			break;
 
 		//	- NONBINARY -
-		case 249899779187415445lu:		//	'nonbinary'
-		case 5863637lu:					//	'nb'
+		case NONBINARY:
+		case NB:
 			if(color_mode)	nonbinary_256();
 			else			nonbinary_8();
 			break;
 
 		//	- PANSEXUAL -
-		case 249901996007388822lu:		//	'pansexual'
-		case 193502276lu:				//	'pan'
+		case PANSEXUAL:
+		case PAN:
 			if(color_mode)	pansexual_256();
 			else			pansexual_8();
 			break;
 
 		//	- TRANSGENDER -
-		case 13895753452281080578lu:	//	'transgender'
-		case 210729322765lu:			//	'trans'
+		case TRANSGENDER:
+		case TRANS:
 			if(color_mode)	transgender_256();
 			else			transgender_8();
 			break;
