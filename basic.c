@@ -5,7 +5,7 @@
 #include "draw.h"
 
 void rainbow_8() {
-	color colors [] = {
+	const color colors [] = {
 		RED,
 		L_RED,
 		L_YELLOW,
@@ -17,7 +17,7 @@ void rainbow_8() {
 }
 
 void aroace_8() {
-	color colors [] = {
+	const color colors [] = {
 		YELLOW,
 		L_YELLOW,
 		WHITE,
@@ -28,7 +28,7 @@ void aroace_8() {
 }
 
 void bisexual_8() {
-	color colors [] = {
+	const color colors [] = {
 		RED,
 		RED,
 		MAGENTA,
@@ -39,7 +39,7 @@ void bisexual_8() {
 }
 
 void gay_8() {
-	color colors [] = {
+	const color colors [] = {
 		CYAN,
 		L_CYAN,
 		WHITE,
@@ -50,7 +50,7 @@ void gay_8() {
 }
 
 void lesbian_8() {
-	color colors [] = {
+	const color colors [] = {
 		RED,
 		L_RED,
 		WHITE,
@@ -61,7 +61,7 @@ void lesbian_8() {
 }
 
 void nonbinary_8() {
-	color colors [] = {
+	const color colors [] = {
 		L_YELLOW,
 		WHITE,
 		MAGENTA,
@@ -71,7 +71,7 @@ void nonbinary_8() {
 }
 
 void pansexual_8() {
-	color colors [] = {
+	const color colors [] = {
 		MAGENTA,
 		MAGENTA,
 		L_YELLOW,
@@ -83,7 +83,7 @@ void pansexual_8() {
 }
 
 void transgender_8() {
-	color colors [] = {
+	const color colors [] = {
 		L_CYAN,
 		L_MAGENTA,
 		WHITE,

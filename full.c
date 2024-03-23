@@ -5,7 +5,7 @@
 #include "draw.h"
 
 void rainbow_256() {
-	color colors [] = {
+	const color colors [] = {
 		196,		//	red
 		208,		//	orange
 		220,		//	yellow
@@ -17,7 +17,7 @@ void rainbow_256() {
 }
 
 void aroace_256() {
-	color colors [] = {
+	const color colors [] = {
 		172,		//	orange
 		184,		//	yellow
 		255,		//	white
@@ -28,7 +28,7 @@ void aroace_256() {
 }
 
 void bisexual_256() {
-	color colors [] = {
+	const color colors [] = {
 		161,		//	magenta
 		161,
 		91,			//	purple
@@ -39,7 +39,7 @@ void bisexual_256() {
 }
 
 void gay_256() {
-	color colors [] = {
+	const color colors [] = {
 		29,
 		49,			//	greens
 		123,
@@ -52,18 +52,18 @@ void gay_256() {
 }
 
 void lesbian_256() {
-	color colors [] = {
+	const color colors [] = {
 		202,		//	orange
 		209,		//	tangerine
 		255,		//	white
-		134,		//	pink
+		205,		//	pink
 		161			//	magenta
 	};
 	draw(5, colors);
 }
 
 void nonbinary_256() {
-	color colors [] = {
+	const color colors [] = {
 		226,		//	yellow
 		255,		//	white
 		134,		//	purple
@@ -73,7 +73,7 @@ void nonbinary_256() {
 }
 
 void pansexual_256() {
-	color colors [] = {
+	const color colors [] = {
 		161, 161,	//	magenta
 		220, 220,	//	yellow
 		45, 45		//	cyan
@@ -82,7 +82,7 @@ void pansexual_256() {
 }
 
 void transgender_256() {
-	color colors [] = {
+	const color colors [] = {
 		45,			//	blue
 		213,		//	pink
 		255,		//	white

@@ -6,5 +6,5 @@
 
 typedef unsigned short int color;
 
-void draw(unsigned short int len, color colors[]);
+void draw(const unsigned short int len, const color colors[]);
 
