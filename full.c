@@ -16,6 +16,17 @@ void rainbow_256() {
 	draw(6, colors);
 }
 
+void aromantic_256() {
+	color colors [] = {
+		40,			//	green
+		83,			//	light green
+		255,		//	white
+		249,		//	gray
+		16			//	black
+	};
+	draw(5, colors);
+}
+
 void aroace_256() {
 	color colors [] = {
 		172,		//	orange
@@ -25,6 +36,16 @@ void aroace_256() {
 		17			//	navy
 	};
 	draw(5, colors);
+}
+
+void asexual_256() {
+	color colors [] = {
+		16,			//	black
+		249,		//	gray
+		255,		//	white
+		90			//	purple
+	};
+	draw(4, colors);
 }
 
 void bigender_256() {

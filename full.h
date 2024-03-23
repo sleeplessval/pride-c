@@ -3,7 +3,9 @@
 #include "draw.h"
 
 void rainbow_256();
+void aromantic_256();
 void aroace_256();
+void asexual_256();
 void bigender_256();
 void bisexual_256();
 void gay_256();

@@ -16,6 +16,17 @@ void rainbow_8() {
 	draw(6, colors);
 }
 
+void aromantic_8() {
+	color colors [] = {
+		GREEN,
+		L_GREEN,
+		WHITE,
+		GRAY,
+		BLACK
+	};
+	draw(5, colors);
+}
+
 void aroace_8() {
 	color colors [] = {
 		YELLOW,
@@ -25,6 +36,16 @@ void aroace_8() {
 		BLUE
 	};
 	draw(5, colors);
+}
+
+void asexual_8() {
+	color colors [] = {
+		BLACK,
+		GRAY,
+		WHITE,
+		MAGENTA
+	};
+	draw(4, colors);
 }
 
 void bigender_8() {

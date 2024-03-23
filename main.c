@@ -23,7 +23,9 @@ void help() {
 		"usage: pride [name]\n\n"
 
 		"flag names:\n"
+		"   aromantic\n"
 		"   aroace\n"
+		"   asexual\n"
 		"   bigender\n"
 		"   bisexual\n"
 		"   gay\n"
@@ -77,11 +79,25 @@ int main(int argc, char **argv) {
 			else			rainbow_8();
 			break;
 
+		//	- AROMANTIC -
+		case 249881625443197539lu:		//	'aromantic'
+		case 193486503lu:				//	'aro'
+			if(color_mode)	aromantic_256();
+			else			aromantic_8();
+			break;
+
 		//	- ARO/ACE -
 		case 6953324567312lu:			//	'aroace'
 		case 22945708850429lu:			//	'aro-ace'
 			if(color_mode)	aroace_256();
 			else			aroace_8();
+			break;
+
+		//	- ASEXUAL -
+		case 229459738843608lu:			//	'asexual'
+		case 193485998lu:				//	'ace'
+			if(color_mode)	asexual_256();
+			else			asexual_8();
 			break;
 
 		//	- BIGENDER -

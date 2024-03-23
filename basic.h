@@ -18,7 +18,9 @@
 #define WHITE		15
 
 void rainbow_8();
+void aromantic_8();
 void aroace_8();
+void asexual_8();
 void bigender_8();
 void bisexual_8();
 void gay_8();
