@@ -75,9 +75,9 @@ void pansexual_256() {
 void transgender_256() {
 	printf(
 		COLOR(45) STRIPE
-		COLOR(117) STRIPE
+		COLOR(213) STRIPE
 		COLOR(255) STRIPE
-		COLOR(117) STRIPE
+		COLOR(213) STRIPE
 		COLOR(45) STRIPE
 	);
 }

@@ -50,6 +50,9 @@ int main(int argc, char **argv) {
 	else { flag = RAINBOW; }
 
 	int color_mode = 0;
+	char * term = getenv("TERM");
+	if(strcmp(term, "linux"))
+		color_mode = 1;
 
 	//	handle flags
 	if(strcmp(flag, "--version") == 0) {
