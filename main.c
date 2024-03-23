@@ -27,6 +27,7 @@ void help() {
 		"   bigender\n"
 		"   bisexual\n"
 		"   gay\n"
+		"   genderfluid\n"
 		"   lesbian\n"
 		"   nonbinary\n"
 		"   pansexual\n"
